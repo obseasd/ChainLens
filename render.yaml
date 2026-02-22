@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: chainlens-server
+    runtime: node
+    rootDir: server
+    buildCommand: npm install && npx tsc
+    startCommand: node dist/index.js
+    envVars:
+      - key: PORT
+        value: 4020
+      - key: ADDRESS
+        value: "0x0000000000000000000000000000000000000000"

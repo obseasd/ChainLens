@@ -6,6 +6,8 @@ Each API call costs **$0.01 USDC**, settled instantly on Base L2. No API keys, n
 
 > Built for the **PinionOS Hackathon** — demonstrating the "software that earns" paradigm.
 
+**Live Demo:** [chainlens-sigma.vercel.app](https://chainlens-sigma.vercel.app)
+
 ---
 
 ## Architecture
@@ -108,6 +110,45 @@ curl http://localhost:4020/token/USDC
 curl http://localhost:4020/tx/0x<HASH>
 ```
 
+## Deployment
+
+### Frontend (Vercel)
+
+The frontend is deployed at **[chainlens-sigma.vercel.app](https://chainlens-sigma.vercel.app)**.
+
+To redeploy:
+
+```bash
+cd frontend
+npx vercel --prod
+```
+
+### Skill Server (Render / Railway / Docker)
+
+**Option A — Render (one-click):**
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/obseasd/ChainLens)
+
+A `render.yaml` blueprint is included. Set your `ADDRESS` env var to receive USDC payments.
+
+**Option B — Docker:**
+
+```bash
+cd server
+docker build -t chainlens-server .
+docker run -p 4020:4020 -e ADDRESS=0xYOUR_WALLET chainlens-server
+```
+
+**Option C — Run locally:**
+
+```bash
+cd server
+npm install
+npm run dev   # uses tsx, runs on port 4020
+```
+
+> In local dev without `x402-express` installed, skills run in **free mode** (no payment required).
+
 ## Screenshots
 
 <!-- Add screenshots after deploying -->
@@ -126,8 +167,6 @@ curl http://localhost:4020/tx/0x<HASH>
 5. Server  →  Facilitator verifies & settles USDC on Base
 6. Server  →  200 OK + JSON data    →  Client
 ```
-
-> In local dev without `x402-express` installed, skills run in **free mode** (no payment required).
 
 ## Tech Stack
 
@@ -157,6 +196,7 @@ chainlens/
 │   │   │   └── tx.ts           # Transaction decoder
 │   │   └── utils/
 │   │       └── rpc.ts          # Base JSON-RPC helper
+│   ├── Dockerfile              # Docker deploy support
 │   ├── package.json
 │   └── tsconfig.json
 ├── frontend/                   # Next.js dashboard
@@ -176,6 +216,7 @@ chainlens/
 │   │       └── pinion.ts       # API helper + skill metadata
 │   ├── package.json
 │   └── tailwind.config.ts
+├── render.yaml                 # Render deploy blueprint
 ├── .env.example
 ├── .gitignore
 └── README.md
