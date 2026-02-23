@@ -79,7 +79,7 @@ export default function SkillCaller({ initialSkill }: { initialSkill?: string })
               }}
               className={`p-3 rounded-xl border text-center transition-all ${
                 selected === i
-                  ? "border-indigo-500/50 bg-indigo-500/10 text-white glow-sm"
+                  ? "border-[#88CC10]/50 bg-[#88CC10]/10 text-white glow-sm"
                   : "border-[var(--border)] bg-[var(--bg-secondary)] text-gray-400 hover:border-gray-600 hover:text-gray-300"
               }`}
             >
@@ -170,9 +170,9 @@ export default function SkillCaller({ initialSkill }: { initialSkill?: string })
                   <div
                     className={`w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold mx-auto mb-2 transition-all duration-500 ${
                       done
-                        ? "bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/30"
+                        ? "bg-gradient-to-br from-[#6fa00d] to-[#88CC10] text-black shadow-lg shadow-[#88CC10]/30"
                         : active
-                        ? "bg-indigo-500/20 text-indigo-400 animate-pulse border border-indigo-500/30"
+                        ? "bg-[#88CC10]/20 text-[#88CC10] animate-pulse border border-[#88CC10]/30"
                         : "bg-[var(--bg-secondary)] text-gray-600 border border-[var(--border)]"
                     }`}
                   >
@@ -184,7 +184,7 @@ export default function SkillCaller({ initialSkill }: { initialSkill?: string })
                       s.icon
                     )}
                   </div>
-                  <p className={`text-xs font-medium ${done ? "text-indigo-400" : "text-gray-600"}`}>
+                  <p className={`text-xs font-medium ${done ? "text-[#88CC10]" : "text-gray-600"}`}>
                     {s.label}
                   </p>
                   {done && (

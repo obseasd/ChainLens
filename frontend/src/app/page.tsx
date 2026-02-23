@@ -16,8 +16,8 @@ export default function Home() {
     <div className="space-y-16">
       {/* Hero */}
       <section className="text-center pt-12 pb-4">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-medium mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#88CC10]/10 border border-[#88CC10]/20 text-[#88CC10] text-xs font-medium mb-8">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#88CC10] animate-pulse" />
           Powered by PinionOS + x402 Protocol
         </div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-5 leading-tight">
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
           <Link
             href="/explore"
-            className="text-sm text-indigo-400 hover:text-indigo-300 font-medium transition-colors hidden sm:block"
+            className="text-sm text-[#88CC10] hover:text-[#a8eb5a] font-medium transition-colors hidden sm:block"
           >
             Open Explorer →
           </Link>
@@ -95,13 +95,13 @@ export default function Home() {
               step: "1",
               title: "Browse",
               desc: "Explore the skill catalog and pick an endpoint",
-              gradient: "from-indigo-500 to-blue-600",
+              gradient: "from-[#88CC10] to-[#6fa00d]",
             },
             {
               step: "2",
               title: "Request",
               desc: "Send an HTTP request to the skill server",
-              gradient: "from-purple-500 to-pink-600",
+              gradient: "from-[#a8eb5a] to-[#88CC10]",
             },
             {
               step: "3",

@@ -19,13 +19,13 @@ export default function SkillCard({ skill, index }: SkillCardProps) {
         >
           {skill.icon}
         </div>
-        <span className="px-2.5 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-mono">
+        <span className="px-2.5 py-1 rounded-full bg-[#88CC10]/10 border border-[#88CC10]/20 text-[#88CC10] text-xs font-mono">
           {skill.price}
         </span>
       </div>
 
       {/* Body */}
-      <h3 className="text-base font-semibold text-white mb-1.5 group-hover:text-indigo-300 transition-colors capitalize">
+      <h3 className="text-base font-semibold text-white mb-1.5 group-hover:text-[#a8eb5a] transition-colors capitalize">
         {skill.name}
       </h3>
       <p className="text-sm text-gray-400 mb-5 leading-relaxed line-clamp-2">{skill.description}</p>
@@ -37,7 +37,7 @@ export default function SkillCard({ skill, index }: SkillCardProps) {
         </code>
         <Link
           href={`/explore?skill=${skill.name}`}
-          className="inline-flex items-center gap-1 text-xs text-indigo-400 hover:text-indigo-300 font-medium transition-colors group/link"
+          className="inline-flex items-center gap-1 text-xs text-[#88CC10] hover:text-[#a8eb5a] font-medium transition-colors group/link"
         >
           Try it
           <svg

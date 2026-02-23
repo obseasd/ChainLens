@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-2 text-sm text-gray-500">
-                <div className="w-5 h-5 rounded bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-[8px] font-bold">
+                <div className="w-5 h-5 rounded bg-gradient-to-br from-[#6fa00d] to-[#88CC10] flex items-center justify-center text-[8px] font-bold text-black">
                   CL
                 </div>
                 <span>ChainLens</span>
@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   href="https://github.com/chu2bard/pinion-os"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-indigo-400 transition-colors"
+                  className="text-gray-500 hover:text-[#88CC10] transition-colors"
                 >
                   GitHub
                 </a>

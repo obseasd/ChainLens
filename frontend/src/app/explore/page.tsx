@@ -27,7 +27,7 @@ function ExploreContent() {
           { label: "Free Mode", text: "No payment required in local dev" },
         ].map((tip) => (
           <div key={tip.label} className="flex items-center gap-2 px-3 py-2 rounded-lg bg-[var(--bg-secondary)] border border-[var(--border)]">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 px-1.5 py-0.5 rounded">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-[#88CC10] bg-[#88CC10]/10 px-1.5 py-0.5 rounded">
               {tip.label}
             </span>
             <span className="text-xs text-gray-500">{tip.text}</span>

@@ -100,8 +100,8 @@ export default function AboutPage() {
               to: "",
               title: "Sign EIP-3009 Authorization",
               desc: "Client signs a USDC transferWithAuthorization off-chain — no gas required at this step",
-              color: "text-purple-400",
-              bg: "bg-purple-500/10",
+              color: "text-[#a8eb5a]",
+              bg: "bg-[#88CC10]/10",
             },
             {
               step: "4",
@@ -110,8 +110,8 @@ export default function AboutPage() {
               to: "Server",
               title: "GET /portfolio/0x... + X-PAYMENT header",
               desc: "Client retries the original request with the base64-encoded signed authorization",
-              color: "text-indigo-400",
-              bg: "bg-indigo-500/10",
+              color: "text-[#88CC10]",
+              bg: "bg-[#88CC10]/10",
             },
             {
               step: "5",
@@ -157,7 +157,7 @@ export default function AboutPage() {
       {/* Architecture details */}
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="card p-6">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center text-sm font-bold mb-4">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#88CC10] to-[#6fa00d] flex items-center justify-center text-sm font-bold text-black mb-4">
             S
           </div>
           <h3 className="text-base font-bold text-white mb-3">Skill Server</h3>
@@ -171,14 +171,14 @@ export default function AboutPage() {
               "Auto-generated /catalog endpoint",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-sm text-gray-400">
-                <span className="text-indigo-400 mt-0.5">&#x2022;</span>
+                <span className="text-[#88CC10] mt-0.5">&#x2022;</span>
                 {item}
               </li>
             ))}
           </ul>
         </div>
         <div className="card p-6">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-fuchsia-600 flex items-center justify-center text-sm font-bold mb-4">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#a8eb5a] to-[#88CC10] flex items-center justify-center text-sm font-bold text-black mb-4">
             F
           </div>
           <h3 className="text-base font-bold text-white mb-3">Frontend Dashboard</h3>
@@ -192,7 +192,7 @@ export default function AboutPage() {
               "Responsive mobile-first design",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-sm text-gray-400">
-                <span className="text-purple-400 mt-0.5">&#x2022;</span>
+                <span className="text-[#a8eb5a] mt-0.5">&#x2022;</span>
                 {item}
               </li>
             ))}
@@ -226,7 +226,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="card p-8 sm:p-10 text-center bg-gradient-to-br from-[var(--bg-card)] to-indigo-500/5 border-indigo-500/10">
+      <section className="card p-8 sm:p-10 text-center bg-gradient-to-br from-[var(--bg-card)] to-[#88CC10]/5 border-[#88CC10]/10">
         <h2 className="text-xl font-bold text-white mb-3">Built on PinionOS</h2>
         <p className="text-gray-400 text-sm mb-6 max-w-lg mx-auto leading-relaxed">
           PinionOS provides the server framework for building paywalled skills and the client SDK

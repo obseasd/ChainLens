@@ -28,7 +28,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-xs font-bold tracking-tight shadow-lg shadow-indigo-500/20 group-hover:shadow-indigo-500/40 transition-shadow">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#6fa00d] to-[#88CC10] flex items-center justify-center text-xs font-bold tracking-tight text-black shadow-lg shadow-[#88CC10]/20 group-hover:shadow-[#88CC10]/40 transition-shadow">
               CL
             </div>
             <span className="text-lg font-semibold gradient-text hidden sm:block">ChainLens</span>
@@ -42,7 +42,7 @@ export default function Header() {
                 href={item.href}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                   pathname === item.href
-                    ? "bg-indigo-500/10 text-indigo-400 shadow-sm shadow-indigo-500/10"
+                    ? "bg-[#88CC10]/10 text-[#88CC10] shadow-sm shadow-[#88CC10]/10"
                     : "text-gray-400 hover:text-gray-200 hover:bg-white/5"
                 }`}
               >
@@ -108,7 +108,7 @@ export default function Header() {
                   onClick={() => setMobileOpen(false)}
                   className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                     pathname === item.href
-                      ? "bg-indigo-500/10 text-indigo-400"
+                      ? "bg-[#88CC10]/10 text-[#88CC10]"
                       : "text-gray-400 hover:text-gray-200 hover:bg-white/5"
                   }`}
                 >
