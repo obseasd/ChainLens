@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -28,9 +29,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#6fa00d] to-[#88CC10] flex items-center justify-center text-xs font-bold tracking-tight text-black shadow-lg shadow-[#88CC10]/20 group-hover:shadow-[#88CC10]/40 transition-shadow">
-              CL
-            </div>
+            <Image src="/logo.png" alt="ChainLens" width={32} height={32} className="w-8 h-8 drop-shadow-lg group-hover:scale-105 transition-transform" />
             <span className="text-lg font-semibold gradient-text hidden sm:block">ChainLens</span>
           </Link>
 

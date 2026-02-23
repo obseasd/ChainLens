@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: "ChainLens | On-Chain Intelligence as a Service",
   description:
     "Real-time blockchain analytics as x402-paywalled microservices on Base. Pay $0.01 USDC per query, settled instantly.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -23,9 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-2 text-sm text-gray-500">
-                <div className="w-5 h-5 rounded bg-gradient-to-br from-[#6fa00d] to-[#88CC10] flex items-center justify-center text-[8px] font-bold text-black">
-                  CL
-                </div>
+                <img src="/logo.png" alt="ChainLens" className="w-5 h-5" />
                 <span>ChainLens</span>
                 <span className="text-gray-700">|</span>
                 <span>Built on PinionOS</span>
